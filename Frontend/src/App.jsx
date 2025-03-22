@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Layout from './layout/Layout'
 
 import './App.css'
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-center bg-blue-300'> Hello World</h1>
+      <Layout/>
     </>
   )
 }
