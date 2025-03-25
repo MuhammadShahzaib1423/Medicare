@@ -11,7 +11,7 @@ import Contact from '../pages/Contact.jsx'
 const Routers = () => {
   return (
 <Routes>
-<Route path="/" element={<Home/>}/>
+<Route path="/home" element={<Home/>}/>
 <Route path='/doctors' element={<Doctors/>}/>
 <Route path='/services' element={<Service/>}/>
 <Route path='/login' element={<Login/>}/>
@@ -23,4 +23,4 @@ const Routers = () => {
 }
 
 export default Routers
-  
+   

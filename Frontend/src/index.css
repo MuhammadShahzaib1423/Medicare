@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+
+
+
+
 /*
 buttonBGColor :"#0067FF,
 YELLOWCOLOR:"F3B60D",
@@ -11,4 +15,43 @@ textColor:"4E545F",
 boxshadow:{
 panelShadow: "rgba(17,12,46,0.15) 0px 48px 100px 0px",
 }
+
+
+.container{
+max-w-full w-[1440px] px-5 mx-auto
+}
+
+.btn{
+bg-primaryColor py-[15px] px-[35px] rounded-[50px] tesxt-white font-[600] mt-[38px]
+}
+
+.heading {
+text-[44px]  leading-[54px] font-[700] text-headingColor
+}
+
+.text__para{
+text-[18px] leading-[30px] font-[400] text-textColor mt-[18px]
+}
+
+
 */
+
+.header{
+    background-image: url('./assets//images//mask.png') ;
+}
+.sticky_header{
+    width: 100%;
+    height:80px;
+    line-height:80px;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 3px 3px -8px #ddd;
+
+}
+.hero_section{
+    background-image: url('./assets/images//hero-bg.png' );
+   
+    background-repeat: no-repeat;
+}

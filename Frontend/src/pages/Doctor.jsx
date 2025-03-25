@@ -1,9 +1,10 @@
 import React from 'react'
+import Doctorlist from '../components/Doctors/Doctorlist'
 
 const Doctor = () => {
   return (
     <div>
-      DOCTOR
+ <Doctorlist/>
     </div>
   )
 }
