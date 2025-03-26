@@ -3,8 +3,8 @@ import doctorimg from '../assets/images/doctor-img01.png'
 import { doctors } from '../assets/data/doctors'
 import { useParams } from 'react-router-dom'
 import AboutDoctor from './AboutDoctor'
-import Feedback from './Feedback.jsx'
-
+import Feedback from './FEEDBACK.JSX'
+import Sidepanel from './sidepanel.jsx'
 
 const DoctorDetail = () => {
   const { id } = useParams();  
@@ -58,10 +58,13 @@ const DoctorDetail = () => {
         </div>
         </div>
 
-        <div></div>
+        <div >
+        <Sidepanel/>
+        </div>
 
      
       </div>
+
      
     </div>
     </section>
