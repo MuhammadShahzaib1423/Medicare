@@ -14,6 +14,7 @@ import Services from '../components/Services/Services'
 import Faqlist from '../components/Faq/faqlist'
 
 import Doctorlist from '../components/Doctors/Doctorlist'
+import Testimoniallist from '../components/Testimonial/Testimoniallist'
 
 const Home = () => {
   return (
@@ -179,6 +180,13 @@ const Home = () => {
           </div>
         </div>
       </div>
+    </section>
+
+    <section>
+      <h1 className='text-[44px]  leading-[54px] font-[700] text-[#181a1e] text-center'> What Our Patient Say</h1>
+    <p className='text-[18px] leading-[30px] font-[400] text-[#4e545f] mt-[18px] text-center'> World Class Care for everyone .Our health System Offers unmatched expert healthcare</p>
+
+      <Testimoniallist/>
     </section>
     </>
   )

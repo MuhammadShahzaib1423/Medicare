@@ -11,12 +11,12 @@ import Contact from '../pages/Contact.jsx'
 const Routers = () => {
   return (
 <Routes>
-<Route path="/home" element={<Home/>}/>
+<Route path="/" element={<Home/>}/>
 <Route path='/doctors' element={<Doctors/>}/>
 <Route path='/services' element={<Service/>}/>
 <Route path='/login' element={<Login/>}/>
 <Route path='/signup' element={<Signup/>}/>
-<Route path='/doctordetail' element={<DoctorDetail/>}/>
+<Route path="/doctors/:id" element={<DoctorDetail />} />
 <Route path='/contact' element={<Contact/>}/>
 </Routes>
   )

@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { BiMenu } from 'react-icons/bi'
 
 const navlinks = [
-  { path: '/home', display: 'Home' },
+  { path: '/', display: 'Home' },
   { path: '/doctors', display: 'Find a Doctor' },
   { path: '/services', display: 'Services' },
   { path: '/contact', display: 'Contact' }

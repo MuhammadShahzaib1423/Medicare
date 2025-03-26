@@ -1,18 +1,18 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-import Routes from '../routes/Routers'
+import React from 'react';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import Routes from '../routes/Routers';
 
 const Layout = () => {
   return (
-    <>
-  <Header/>
-  <main>
-    <Routes/>
-  </main>
-  <Footer/>
-  </>
-  )
-}
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow whitecolor">
+        <Routes />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

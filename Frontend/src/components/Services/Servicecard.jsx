@@ -7,7 +7,7 @@ const Servicecard = ({ item,index }) => {
 
     return (
         <div 
-            className={`py-[30px] px-3 lg:px-5 rounded-lg shadow-lg`} 
+            className={`py-[30px] px-3 lg:px-5 rounded-lg bg-[#FFFFFF] shadow-lg`} 
             
         >
             <h2 className="text-[26px] leading-9 font-[700]">

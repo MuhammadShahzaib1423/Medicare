@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 const Doctorcard = ({ doctor }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-5 flex flex-col items-center text-center">
@@ -19,10 +20,10 @@ const Doctorcard = ({ doctor }) => {
       <p className="mt-3 text-gray-600 text-sm">{doctor.hospital}</p>
       <p className="text-gray-500 text-sm">Patients Treated: <span className="font-bold">{doctor.totalPatients}</span></p>
 
-        <Link to='/doctors'>
-      <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
-        Book Appointment
-      </button>
+      <Link to={`/doctors/${doctor.id}`}>
+        <button className="mt-4 bg-blue-500 text-white px-4 py-2 cursor-pointer rounded-md hover:bg-blue-600 transition">
+          Book Appointment
+        </button>
       </Link>
     </div>
   );
