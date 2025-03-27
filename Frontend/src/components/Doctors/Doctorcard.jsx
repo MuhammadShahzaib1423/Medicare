@@ -19,18 +19,7 @@ const Doctorcard = ({ doctor }) => {
 
       <p className="mt-3 text-gray-600 text-sm">{doctor.hospital}</p>
       <p className="
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+           
        text-gray-500 text-sm">Patients Treated: <span className="font-bold">{doctor.totalPatients}</span></p>
 
       <Link to={`/doctors/${doctor.id}`}>

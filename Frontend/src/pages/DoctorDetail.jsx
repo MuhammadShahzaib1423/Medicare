@@ -9,11 +9,7 @@ import Sidepanel from './sidepanel.jsx'
 const DoctorDetail = () => {
   const { id } = useParams();  
   const [tab, setTab] = useState('about');
-
-
   const doctor = doctors.find((doc) => doc.id.toString() === id);
-
-
   if (!doctor) {
     return <div className="text-center text-red-500 font-bold mt-10">Doctor Not Found</div>;
   }
@@ -22,8 +18,6 @@ const DoctorDetail = () => {
     <section>
     <div className='max-w-[1170px] px-5 mt-10 mx-auto'>
       <div className='grid md:grid-cols-3 gap-[50px]'>
-
-
         <div className='md:col-span-2'>
           <div className="flex items-center gap-5"> 
             <figure className='max-w-[300px] max-h-[300px]'>
@@ -42,7 +36,6 @@ const DoctorDetail = () => {
               </div>
               <p className='text-[14px] leading-[30px] font-[400] text-textColor  md:text-[15px] lg:max-w-[390px] text-gray-500 '>{doctor.notableAchievement}</p>
             </div>
-
           </div>
           <div className='mt-[50px] border-b border-solid border-[#0066ff34]'>
             <button onClick={()=>setTab('about')} className={`${tab==='about' && 'border-b border-solid border-blue-400'} cursor-pointer py-2 px-5 mr-5 text-[16px] leading- text-[#181a1e] font-semibold`}>
@@ -54,18 +47,13 @@ const DoctorDetail = () => {
           </div>
           <div className='mt-[30px]'>
             {tab === 'about' && <p className='text-[14px] leading-[30px] font-[400] text-[#4e545f] mt-[18px]'><AboutDoctor/></p>}
-            {tab === 'feedback' && <p className='text-[14px] leading-[30px] font-[400] text-[#4e545f] mt-[18px]'><Feedback/></p>}
+             {tab === 'feedback' && <p className='text-[14px] leading-[30px] font-[400] text-[#4e545f] mt-[18px]'><Feedback/></p>}
         </div>
         </div>
-
         <div >
         <Sidepanel/>
         </div>
-
-     
-      </div>
-
-     
+      </div>   
     </div>
     </section>
    
